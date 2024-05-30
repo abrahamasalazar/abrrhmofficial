@@ -8,7 +8,7 @@ body {
     font-family: "Tomorrow", sans-serif;
     font-weight: 300;
     color: #a0a8bd;
-    height: 100%;
+    height: 100vh;
   }
   
   :root {
