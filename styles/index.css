@@ -1,14 +1,10 @@
 body {
-    margin: 0;
-    background-image: url(/assets/maxresdefault.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* background-color: black; */
+    /* margin: 0; */
+    background-color: black;
     font-family: "Tomorrow", sans-serif;
     font-weight: 300;
     color: #a0a8bd;
-    height: 100vh;
+    /* height: 100vh; */
   }
   
   :root {
@@ -20,7 +16,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.9);  /* original */
+    background-color: rgba(0, 0, 0, 1.0);  /* original */
     /* background: rgb(11 22 38 / 80%); footer color */
 }
 nav a {
@@ -43,8 +39,10 @@ nav a:last-child:hover {
 nav a:last-child:active {
     background: linear-gradient(55deg, rgba(149,0,255,1) 0%, rgba(0,14,255,1) 100%);
 }
+
+
 /* footer */
-footer {
+/* footer {
     position: fixed;
     left: 0;
     bottom: 12px;
@@ -52,7 +50,7 @@ footer {
     background-color: #08162c;
     padding-top: 60px;
   }
-  
+
   section.top > img {
     height: 30px;
     margin: 0 auto 50px;
@@ -149,6 +147,7 @@ footer {
     border-radius: 30px;
     text-align: center;
   }
+  
   @media (width > 400px) {
     .links-column {
       text-align: left;
@@ -200,4 +199,4 @@ footer {
     .socials-column :is(h2, p) {
       display: block;
     }
-  }
+  } */
