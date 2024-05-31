@@ -1,77 +1,202 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABRRHM Official</title>
-    <link rel="stylesheet" href="/styles/index.css">
-    <!-----FontAwesome Icons----->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!-------Google fonts-------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--------------------------->
-</head>
-<body>
-   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="media.html">Media</a>
-    <img src="/assets/abrrhm-logo.png" alt="logo">
-    <a href="music.html">Music</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-   </nav>
+body {
+    /* margin: 0; */
+    background-color: black;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    color: #a0a8bd;
+    /* height: 100vh; */
+  }
+  
+  :root {
+    --color-title: #fff9ff;
+  }
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1.0);  /* original */
+    /* background: rgb(11 22 38 / 80%); footer color */
+}
+nav a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+nav img {
+    width: 20%;
+}
+nav a:last-child {
+    background-color: #112c55;
+    opacity: 1;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+nav a:last-child:hover {
+    background: linear-gradient(230deg, rgba(149,0,255,1) 0%, rgba(0,14,255,1) 100%);
+}
+nav a:last-child:active {
+    background: linear-gradient(55deg, rgba(149,0,255,1) 0%, rgba(0,14,255,1) 100%);
+}
 
 
+/* footer */
+/* footer {
+    position: fixed;
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    background-color: #08162c;
+    padding-top: 60px;
+  }
 
-    <footer>
-        <section class="top">
-          <img src="/assets/abrrhm-logo.png" />
-          <div class="links">
-            <div class="links-column">
-              <h2>Navigation</h2>
-              <a> Home </a>
-              <a> About </a>
-              <a> Media </a>
-              <a> Music </a>
-              <a> Events </a>
-            </div>
-            <div class="links-column">
-              <h2>Professional</h2>
-              <a>Portfolio</a>
-              <a>Resume</a>
-              <a>LinkedIn</a>
-              <a>Codesandbox</a>
-              <a>Dribbble</a>
-            </div>
-            <div class="links-column socials-column">
-              <h2>Socials</h2>
-              <p>
-                Follow to get the latest updates.
-              </p>
-              <div class="socials">
-                <a class="fa-brands fa-facebook"></a>
-                <a class="fa-brands fa-twitter"></a>
-                <a class="fa-brands fa-tiktok"></a>
-                <a class="fa-brands fa-instagram"></a>
-                <a class="fa-brands fa-snapchat"></a>
-              </div>
-              <a class="footer-contact-button" href="contact.html">Contact</a>
-            </div>
-          </div>
-        </section>
-        <section class="bottom">
-          <p class="copyright">&copy 2024 ABRRHM. All rights reserved.</p>
-          <div class="legal">
-            <a> Contact </a>
-            <a> Terms </a>
-            <a> Privacy </a>
-          </div>
-        </section>
-      </footer>
-</body>
-</html>
+  section.top > img {
+    height: 30px;
+    margin: 0 auto 50px;
+  }
+  
+  section {
+    position: relative;
+    margin: 0 30px;
+  }
+  
+  section.top {
+    display: grid;
+    border-bottom: 2px solid rgb(255 255 255 / 20%);
+    padding-bottom: 20px;
+  }
+  
+  section.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  section.top .links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+  
+  .links-column {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-title);
+  }
+  
+  section p {
+    margin: 0;
+  }
+  
+  .legal > a {
+    margin: 0 0 0 4px;
+  }
+  
+  .legal,
+  .copyright {
+    font-size: 12px;
+  }
+  
+  .legal > span {
+    margin-right: 10px;
+  }
+  
+  section.top .socials {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    translate: -50% 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+  }
+  
+  section.top .socials > a {
+    font-size: 20px;
+    background: rgb(45 118 232 / 25%);
+    color: var(--color-title);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+  }
+  
+  .socials-column :is(h2, p) {
+    display: none;
+  }
+  .footer-contact-button {
+    color: white;
+    text-decoration: none;
+    background-color: #112c55;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  
+  @media (width > 400px) {
+    .links-column {
+      text-align: left;
+    }
+  
+    section.top .links {
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 50px;
+    }
+  
+    section.bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+    }
+  
+    section.top .socials {
+      left: 0;
+      translate: 0;
+    }
+  
+    section.top > img {
+      margin: 0 0 50px;
+    }
+  }
+  
+  @media (width >= 640px) {
+    section {
+      margin: 0 auto;
+      max-width: 580px;
+      padding: 0;
+    }
+  
+    section.top .links {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    section.top .socials {
+      position: static;
+    }
+  
+    section.bottom {
+      justify-content: flex-start;
+    }
+  
+    .socials-column :is(h2, p) {
+      display: block;
+    }
+  } */
